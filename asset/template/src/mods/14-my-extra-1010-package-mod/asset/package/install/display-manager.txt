@@ -13,6 +13,7 @@
 
 lightdm
 lightdm-settings
+accountsservice
 
 
 
