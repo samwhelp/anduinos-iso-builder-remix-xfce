@@ -13,7 +13,7 @@ source $SCRIPT_DIR/args.sh
 function exit_on_signal_interrupted() {
     print_ok "Exit on signal interrupted..."
     ## Do something before exit.
-    umount_on_exit
+    #umount_on_exit
     sleep 2
     exit 0
 }
@@ -25,13 +25,32 @@ function exit_on_signal_terminated() {
     exit 0
 }
 
+function exit_on_err() {
+    print_ok "Exit on err..."
+    ## Do something before exit.
+    #umount_on_exit
+    sleep 2
+    exit 0
+}
+
+function exit_on_exit() {
+    print_ok "Exit on exit..."
+    ## Do something before exit.
+    umount_on_exit
+    sleep 2
+    exit 0
+}
+
 function bind_signal() {
     print_ok "Bind signal..."
     trap exit_on_signal_interrupted SIGINT
     trap exit_on_signal_terminated SIGTERM
+    trap exit_on_err ERR
+    trap exit_on_exit EXIT
 }
 
 function umount_on_exit() {
+    print_ok "Umount on exit..."
     sudo umount new_building_os/dev || sudo umount -lf new_building_os/dev || true
     sudo umount new_building_os/run || sudo umount -lf new_building_os/run || true
     sudo umount new_building_os/proc || sudo umount -lf new_building_os/proc || true
