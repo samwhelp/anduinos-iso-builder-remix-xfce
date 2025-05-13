@@ -49,7 +49,7 @@ function model_clean() {
     sudo rm -rf ./image || true
     judge "Clean up image"
     sudo rm -f ./*.iso || true
-    judge "Clean up iso"
+    judge "Clean up *.iso"
     sudo rm -f ./wget-log* || true
     judge "Clean up wget-log"
     sudo rm -f ./log.txt* || true
