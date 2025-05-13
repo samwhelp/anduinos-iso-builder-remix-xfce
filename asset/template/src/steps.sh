@@ -32,16 +32,10 @@ function bind_signal() {
 }
 
 function umount_on_exit() {
-    print_ok "Unmounting /proc /sys /dev/pts within chroot..."
-    sudo chroot new_building_os umount /dev/pts || sudo chroot new_building_os umount -lf /dev/pts
-    sudo chroot new_building_os umount /sys || sudo chroot new_building_os umount -lf /sys
-    sudo chroot new_building_os umount /proc || sudo chroot new_building_os umount -lf /proc
-    judge "Unmount /proc /sys /dev/pts"
-
-    print_ok "Unmounting /dev /run outside of chroot..."
-    sudo umount new_building_os/dev || sudo umount -lf new_building_os/dev
-    sudo umount new_building_os/run || sudo umount -lf new_building_os/run
-    judge "Unmount /dev /run /proc /sys"
+    sudo umount new_building_os/dev || sudo umount -lf new_building_os/dev || true
+    sudo umount new_building_os/run || sudo umount -lf new_building_os/run || true
+    sudo umount new_building_os/proc || sudo umount -lf new_building_os/proc || true
+    sudo umount new_building_os/sys || sudo umount -lf new_building_os/sys || true
 }
 
 function check_host() {
