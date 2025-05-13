@@ -26,6 +26,7 @@ function exit_on_signal_terminated() {
 }
 
 function bind_signal() {
+    print_ok "Bind signal..."
     trap exit_on_signal_interrupted SIGINT
     trap exit_on_signal_terminated SIGTERM
 }
