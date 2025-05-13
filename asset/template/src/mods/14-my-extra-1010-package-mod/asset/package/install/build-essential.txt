@@ -8,6 +8,16 @@
 
 
 ##
+## ## Package / dconf-cli
+##
+
+## for `sudo dconf update` [See: 60-dconf-system-db-init-mod]
+dconf-cli
+
+
+
+
+##
 ## ## Package / sassc
 ##
 

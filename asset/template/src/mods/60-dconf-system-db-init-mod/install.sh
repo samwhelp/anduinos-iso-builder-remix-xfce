@@ -30,6 +30,8 @@ REF_MASTER_INSTALL_SCRIPT_FILE_PATH="${REF_BASE_DIR_PATH}/${REF_CMD_FILE_NAME}"
 
 model_dconf_system_db_init () {
 
+	##sudo apt-get install -y dconf-cli
+
 	##sudo dconf update
 	dconf update
 
