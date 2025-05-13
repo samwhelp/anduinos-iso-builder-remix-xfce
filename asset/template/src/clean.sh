@@ -48,14 +48,14 @@ function model_clean() {
     judge "Clean up rootfs"
     sudo rm -rf ./image || true
     judge "Clean up image"
+    sudo rm -rf ./dist || true
+    judge "Clean up dist"
     sudo rm -f ./*.iso || true
     judge "Clean up *.iso"
     sudo rm -f ./wget-log* || true
     judge "Clean up wget-log"
     sudo rm -f ./log.txt* || true
     judge "Clean up log.txt"
-    sudo rm -rf ./dist || true
-    judge "Clean up dist"
 }
 
 model_clean
