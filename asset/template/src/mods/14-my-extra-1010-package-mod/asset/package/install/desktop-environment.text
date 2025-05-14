@@ -14,14 +14,26 @@
 xfce4
 xfce4-goodies
 
+
 xfce4-power-manager
+xfce4-power-manager-plugins
+
+
 xfce4-terminal
+
+
+thunar
+thunar-volman
+
+
 mousepad
 
-xarchiver
 
 pavucontrol
 pulseaudio
+
+
+xarchiver
 
 
 

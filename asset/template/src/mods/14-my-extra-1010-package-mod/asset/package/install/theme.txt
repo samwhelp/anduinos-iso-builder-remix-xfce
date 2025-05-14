@@ -1,7 +1,5 @@
 
 
-
-
 ##
 ## # Theme
 ##
@@ -161,4 +159,5 @@ materia-gtk-theme
 ## ## Package / Theme / orchis
 ##
 
-#orchis-gtk-theme
+orchis-gtk-theme
+#orchis-kde
