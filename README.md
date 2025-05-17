@@ -81,17 +81,17 @@ sudo apt-get install git
 ```
 
 
-> clone [anduinos-iso-builder-remix](https://github.com/samwhelp/anduinos-iso-builder-remix)
+> clone [anduinos-iso-builder-remix-xfce](https://github.com/samwhelp/anduinos-iso-builder-remix-xfce)
 
 ``` sh
-git clone https://github.com/samwhelp/anduinos-iso-builder-remix.git
+git clone https://github.com/samwhelp/anduinos-iso-builder-remix-xfce.git
 ```
 
 
-> change dir to `anduinos-iso-builder-remix`
+> change dir to `anduinos-iso-builder-remix-xfce`
 
 ``` sh
-cd anduinos-iso-builder-remix
+cd anduinos-iso-builder-remix-xfce
 ```
 
 
