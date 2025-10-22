@@ -18,4 +18,3 @@ lshw
 inxi
 
 fastfetch
-fastfetch
