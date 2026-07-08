@@ -32,6 +32,12 @@
 
 ## Link
 
+| Link | GitHub |
+| ---- | ------ |
+| [AnduinOS Xfce Adjustment](https://samwhelp.github.io/anduinos-xfce-adjustment/) | [GitHub](https://github.com/samwhelp/anduinos-xfce-adjustment) |
+| [AnduinOS Xfce Note](https://samwhelp.github.io/note-about-anduinos-xfce/) | [GitHub](https://github.com/samwhelp/note-about-anduinos-xfce) |
+| [AnduinOS Adjustment](https://samwhelp.github.io/anduinos-adjustment/) | [GitHub](https://github.com/samwhelp/anduinos-adjustment) |
+
 
 
 
